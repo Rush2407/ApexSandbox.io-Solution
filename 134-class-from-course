@@ -1,0 +1,14 @@
+public Id classFromCourse(String courseName) {
+    // code here
+    List<apxio__Course__c> courses= [SELECT Id, Name FROM apxio__Course__c WHERE Name=:courseName];
+
+    if(courses.isEmpty()){
+        return null ;
+    }
+    else{
+        apxio__Class__c newCls= new apxio__Class__c(apxio__Course__c = courses[0].Id,Name=courses[0].Name);
+        insert newCls;
+        return newCls.Id;
+    }
+
+}

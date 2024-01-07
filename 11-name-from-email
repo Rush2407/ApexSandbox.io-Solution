@@ -1,0 +1,15 @@
+public String nameFromEmail(String email) {
+    //code here
+    Integer m = email.indexOf('.');
+    Integer n= email.indexOf('@');
+    String str1=email.substring(0,m);
+    String str2=email.substring(m+1,n);
+    
+  String newStr1= str1.toLowerCase();
+    String newStr2=str2.toLowerCase();
+
+   newStr1=  newStr1.capitalize();
+   newStr2=  newStr2.capitalize();
+
+    return newStr1+' '+newStr2;
+}

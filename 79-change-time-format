@@ -1,0 +1,29 @@
+public String changeTimeFormat(String strTime) {
+    //code here
+    String str1=strTime.substring(0,2);
+    String str2=strTime.substring(2,5);
+
+    Integer time1=Integer.valueof(str1);
+
+    if(time1==00 ){
+        time1 =12 ;
+        return String.valueof(time1)+str2+' AM';
+    }  
+    else if(time1>12){
+        time1 -= 12;
+        if(time1>=0 && time1<=9){
+            String st = '0'+String.valueof(time1);
+            return String.valueof(st)+str2+' PM';
+        }
+        else{
+            return String.valueof(time1)+str2+' PM';
+        }
+        
+    } 
+    else if(time1==12){
+        return str1+str2+' PM';
+    }
+    else{
+        return str1+str2+' AM';
+    }
+}

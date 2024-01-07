@@ -1,0 +1,36 @@
+public String reverseWordsInASentence(String sentence){
+    //your flawless code here
+    if(sentence == null){
+        return null;
+    }
+    else if(sentence ==''){
+        return '';
+    }
+    else{
+        String newSentence  = sentence.reverse();
+            
+        List<String> senList = newSentence.split(' ');  
+        List<String> newSenList = new List<String>();
+        
+        //Iterating over senList and 
+        //performed reverse again on each word
+        //and adding it to newSenList
+        for(String s : senList){
+            String p = s.reverse();
+            newSenList.add(p);  
+        }
+        
+        //Created new empty String
+        String a='';
+
+        //Iterating till size-1 and
+        //adding it to empty String a
+        for(Integer i=0;i<newSenList.size()-1;i++){
+            a += newSenList[i]+' ';
+        }
+        
+        //final result which is sum of
+        // a and last element which we have not included in a
+        return a + newSenList[newSenList.size()-1];
+    }
+}

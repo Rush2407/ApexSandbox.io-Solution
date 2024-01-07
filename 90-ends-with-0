@@ -1,0 +1,11 @@
+public Boolean isEndWithZero(Integer num){
+     //code here
+     String str = String.valueOf(num);
+     
+     if(str.endsWith('0')){
+         return true;
+     }
+     else{
+         return false;
+     }
+}

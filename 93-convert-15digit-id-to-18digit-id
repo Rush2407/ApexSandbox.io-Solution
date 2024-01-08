@@ -1,6 +1,13 @@
 public String convert15to18DigitId(String fifteenDigit)
 {
-    //code here
+    //? is a safe navigation operator. It is used to safely 
+    //access properties or methods of an object without
+    // getting a NullPointerException if the object is null.
+
+    // if (fifteenDigit?.length()==15) {
+    //     return (Id)fifteenDigit;
+    // }
+    
     if (fifteenDigit!=null && fifteenDigit.length()==15) {
         return (Id)fifteenDigit;
     }

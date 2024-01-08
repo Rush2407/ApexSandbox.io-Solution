@@ -1,11 +1,5 @@
 public String getAccountBillingCityWithSafeNavigation(List<Account> accounts){
    // Code here
-   for(Account a: accounts){
-       if(a.BillingCity.length()== null){
-           return 'null';
-       }
-       else{
-           return a.BillingCity;
-       }
-   }
+   String BillingCity = accounts[0]?.BillingCity;
+   return BillingCity;
 }

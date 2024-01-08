@@ -1,0 +1,21 @@
+public List<Account> checkAccounts(List<Account> accounts)
+{
+    // code here 
+    if(accounts.BillingCity== null){
+        throw IllegalArgumentException('accounts should not be null');
+    }
+    else if(accounts.BillingCity.isEmpty()){
+        AccountException a = new AccountException();
+        throw a;
+    }
+    else {
+        return accounts;
+    }
+}
+
+//do not remove the following custom-defined exception
+public class AccountException extends Exception {
+    public override String getMessage(){
+        return 'Invalid BillingCity';
+    }
+}

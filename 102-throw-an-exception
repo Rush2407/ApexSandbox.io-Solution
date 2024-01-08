@@ -14,7 +14,7 @@ public List<Account> checkAccounts(List<Account> accounts)
              return accounts;
         }
     catch(Exception e){
-        return e.getMessage();
+        return null;
     }
 }
 

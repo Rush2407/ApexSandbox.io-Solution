@@ -11,10 +11,6 @@ public List<Account> checkAccounts(List<Account> accounts)
                     }
                 }
             } 
-            if(accounts.BillingCity==null){
-                AccountException a = new AccountException();
-                throw a;
-            }
              return accounts;
         }
 }

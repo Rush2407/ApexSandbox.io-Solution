@@ -7,7 +7,7 @@ public List<Account> checkAccounts(List<Account> accounts)
             else{
                 for(Account a: accounts){
                     if(a.BillingCity == null){
-                        throw new AccountException('Invalid BillingCity');
+                        throw new AccountException();
                     }
                 }
             } 
@@ -17,7 +17,7 @@ public List<Account> checkAccounts(List<Account> accounts)
 
 //do not remove the following custom-defined exception
 public class AccountException extends Exception {
-    public AccountException(String message){
-        super(message);
+    public override String getMessage(){
+        return 'Invalid BillingCity';
     }
 }

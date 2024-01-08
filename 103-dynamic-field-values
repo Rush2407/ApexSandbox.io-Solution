@@ -5,10 +5,11 @@ public List<String> getFieldsValue(Account acc, List<String> fields)
     for(String f:fields){
         if(acc.get(f) == null){
             aList.add('null');
-        }
+        }else{
          String fieldValue = (String)acc.get(f);
         String n=String.valueOf(fieldValue);
         aList.add(n);
+        }
     }
     return aList;
 }

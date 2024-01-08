@@ -1,11 +1,8 @@
 public Boolean isTypeAccount(sObject record)
 {
     // code here
-    List<sObject> lList = new List<sObject>();
     
-    sObject acc = [SELECT Id FROM sObject LIMIT 1];
-    
-    if(record instanceOf sObject)){
+    if(record instanceof sObject)){
         return true;
     }
     else {

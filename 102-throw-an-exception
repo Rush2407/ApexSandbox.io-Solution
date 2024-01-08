@@ -13,6 +13,9 @@ public List<Account> checkAccounts(List<Account> accounts)
             } 
              return accounts;
         }
+    catch(Exception e){
+        return null;
+    }
 }
 
 //do not remove the following custom-defined exception

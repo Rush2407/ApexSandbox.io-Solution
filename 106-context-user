@@ -5,5 +5,5 @@ public Map<String,String> getContextUserInformation(){
         'ProfileId'=>UserInfo.getProfileId(),
         'Type' =>UserInfo.getUserType(),
         'UserName'=>UserInfo.getUserName()
-   }
+   };
 }

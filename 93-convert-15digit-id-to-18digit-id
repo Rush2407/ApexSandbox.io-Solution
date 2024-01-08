@@ -3,7 +3,7 @@ public String convert15to18DigitId(String fifteenDigit)
     //code here
     if(fifteenDigit.length()<=15){
         Id a= Id.valueOf(fifteenDigit);
-    if(a.size()==18){
+    if(a.length()==18){
         String b = String.valueOf(a);
         return b;
     }

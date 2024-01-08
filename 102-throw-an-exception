@@ -1,26 +1,19 @@
 public List<Account> checkAccounts(List<Account> accounts)
 {
-    try{
             if(accounts == null){
                 throw new IllegalArgumentException('accounts should not be null');
             }
             else{
                 for(Account a: accounts){
                     if(a.BillingCity == null){
-                        throw new AccountException();
+                        throw new AccountException('Invalid BillingCity');
                     }
                 }
             } 
              return accounts;
-        }
-    catch(Exception e){
-        return null;
-    }
 }
 
 //do not remove the following custom-defined exception
 public class AccountException extends Exception {
-    public override String getMessage(){
-        return 'Invalid BillingCity';
-    }
+    
 }

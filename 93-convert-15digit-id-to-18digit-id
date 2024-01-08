@@ -4,7 +4,7 @@ public String convert15to18DigitId(String fifteenDigit)
     if(fifteenDigit.length()<=15){
         Id a= Id.valueOf(fifteenDigit);
         String b = String.valueOf(a);
-    if(a.length() ==18){
+    if(b.length() ==18){
         return b;
     }
     }

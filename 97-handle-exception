@@ -1,7 +1,8 @@
 public String divide(Integer a, Integer b){
     //code here
     try{
-        return a/b;
+        String c= String.valueOf(a/b);
+        return c;
     }
     catch(Exception e){
         return e.getMessage();

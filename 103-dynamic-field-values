@@ -6,6 +6,5 @@ public List<String> getFieldsValue(Account acc, List<String> fields)
          String fieldValue = String.valueOf(acc.get(f));
          aList.add(fieldValue);
         }
-    }
     return aList;
 }

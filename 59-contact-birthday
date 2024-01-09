@@ -1,0 +1,17 @@
+public Boolean isBirthday(Contact c) {
+    //code here
+    Date date = System.today();
+    Integer daytoday = date.day();
+    Integer monthtoday = date.month();
+
+    Integer day= c.Birthdate.day();
+    Integer month = c.Birthdate.month();
+    if(daytoday == day && monthtoday== month){
+        return true;
+    }
+    else {
+        return false;
+    }
+
+    
+}
